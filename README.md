@@ -1,4 +1,4 @@
-# durgeshchaudhary1988.github.io
+# Personal Growth
 
 ## Topics to cover
 
@@ -7,7 +7,7 @@
  - [ ] Builder
  - [ ] Factory Method
  - [ ] Prototype
- - [ ] Singleton
+ - [X] Singleton
  - [ ] Adapter
  - [ ] Bridge
  - [ ] Composite
@@ -26,3 +26,11 @@
  - [ ] Strategy
  - [ ] Template Method
  - [ ] Visitor
+
+### dotnet core
+### React JS
+### Material UI
+### GIT
+### Azure Dev Ops
+### SOLID Design Principles
+### Cloud (Azure)
