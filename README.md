@@ -76,7 +76,16 @@ UseWhen(predicate,Action);
 ```
 
 #### Dependency Injection
+
 ```
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.Add(new ServiceDescriptor(typeof(Abstraction),typeof(ConcreteImplementation),ServiceLifetime);
 ```
+Constructor Injection is to use DI to resolve abstractions in constructor, and when done in Methods, it is called Method Injection
+```
+public Task SomeMethod([FromService] SomeInterface someInterface){}
+```
+**ServiceLifetime**:
+ - Transient: Per Injection, if in a request 3 injections are required, 3 objects will be created, disposed when request ends(similar to scoped)
+ - Scoped: Browser Request, if in a request 3 injections are required, 1 object will be created and shared, disposed when request ends
+ - Singleton: Only one object is created and is shared till lifetime of the service, when application ends
