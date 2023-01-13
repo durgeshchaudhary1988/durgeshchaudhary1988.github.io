@@ -71,5 +71,12 @@ Only one instance should be created in the lifetime.
 
 ### dotnet core
 #### Middleware
+```
+UseWhen(predicate,Action);
+```
 
 #### Dependency Injection
+```
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.Add(new ServiceDescriptor(typeof(Abstraction),typeof(ConcreteImplementation),ServiceLifetime);
+```
