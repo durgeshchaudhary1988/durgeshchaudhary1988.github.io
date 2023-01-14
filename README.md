@@ -40,7 +40,7 @@
  - [ ] Partial Views
  - [ ] View Components
  - [X] Dependency Injection
- - [ ] Environments
+ - [X] Environments
  - [ ] Configurations
  - [ ] xUnit
  - [ ] CRUD Operations
@@ -75,21 +75,6 @@ Only one instance should be created in the lifetime.
 UseWhen(predicate,Action);
 ```
 
-#### Environments
-on Development environment variables are set in launchSettings.json under different profiles under environmentVariables->`ASPNETCORE_ENVIRONMENT` or `DOTNET_ENVIRONMENT`
-
-You can set on Powershell> `$Env:ASPNETCORE_ENVIRONMENT="SomeValue"`
-You can set on cmd> `SET ASPNETCORE_ENVIRONMENT="SomeValue"`
-
-`dotnet run` runs with launchsettings configuration
-`dotnet run --no-launch-profile` runs with envirnoment set to Production and no launch profile
-
-`app.Environment` to use Envirnoment related properties and method
-For Dependency Injection you get `IWebHostEnvironment` 
-
-You can also use Tag Helper like <environment></environment> to perform environment specific rendering in ASP.Net, exclude and include are attributes commonly used
-```<environment include"Development">someContent</environment>```
-
 #### Dependency Injection
 
 ```
@@ -122,3 +107,19 @@ using(IServiceScope scope = IServiceScopeFactory.CreateScope())
 ```
 @inject Abstraction abstraction
 ```
+
+#### Environments
+
+on Development environment variables are set in launchSettings.json under different profiles under environmentVariables->`ASPNETCORE_ENVIRONMENT` or `DOTNET_ENVIRONMENT`
+
+You can set on Powershell> `$Env:ASPNETCORE_ENVIRONMENT="SomeValue"`
+You can set on cmd> `SET ASPNETCORE_ENVIRONMENT="SomeValue"`
+
+`dotnet run` runs with launchsettings configuration
+`dotnet run --no-launch-profile` runs with envirnoment set to Production and no launch profile
+
+`app.Environment` to use Envirnoment related properties and method
+For Dependency Injection you get `IWebHostEnvironment` 
+
+You can also use Tag Helper like <environment></environment> to perform environment specific rendering in ASP.Net, exclude and include are attributes commonly used
+```<environment include"Development">someContent</environment>```
