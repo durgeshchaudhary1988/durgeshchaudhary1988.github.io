@@ -76,12 +76,19 @@ UseWhen(predicate,Action);
 ```
 
 #### Environments
-on Development environment variables are set in launchSettings.json under different profiles under environmentVariables->ASPNETCORE_ENVIRONMENT or DOTNETCORE_ENVIRONMENT
+on Development environment variables are set in launchSettings.json under different profiles under environmentVariables->`ASPNETCORE_ENVIRONMENT` or `DOTNET_ENVIRONMENT`
 
-`dotnet run` `dotnet run --no-launch-profile` runs with envirnoment set to Production
+You can set on Powershell> `$Env:ASPNETCORE_ENVIRONMENT="SomeValue"`
+You can set on cmd> `SET ASPNETCORE_ENVIRONMENT="SomeValue"`
+
+`dotnet run` runs with launchsettings configuration
+`dotnet run --no-launch-profile` runs with envirnoment set to Production and no launch profile
 
 `app.Environment` to use Envirnoment related properties and method
 For Dependency Injection you get `IWebHostEnvironment` 
+
+You can also use Tag Helper like <environment></environment> to perform environment specific rendering in ASP.Net, exclude and include are attributes commonly used
+```<environment include"Development">someContent</environment>```
 
 #### Dependency Injection
 
