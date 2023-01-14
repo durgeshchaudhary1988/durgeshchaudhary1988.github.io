@@ -75,6 +75,14 @@ Only one instance should be created in the lifetime.
 UseWhen(predicate,Action);
 ```
 
+#### Environments
+on Development environment variables are set in launchSettings.json under different profiles under environmentVariables->ASPNETCORE_ENVIRONMENT or DOTNETCORE_ENVIRONMENT
+
+`dotnet run` `dotnet run --no-launch-profile` runs with envirnoment set to Production
+
+`app.Environment` to use Envirnoment related properties and method
+For Dependency Injection you get `IWebHostEnvironment` 
+
 #### Dependency Injection
 
 ```
