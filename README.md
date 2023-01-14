@@ -4,59 +4,59 @@
 ## Topics to cover
 
 ### [Design Patterns](#design-patterns-notes)
- - [ ] Abstract Factory
- - [ ] Builder
- - [ ] Factory Method
- - [ ] Prototype
- - [X] Singleton
- - [ ] Adapter
- - [ ] Bridge
- - [ ] Composite
- - [ ] Decorator
- - [ ] Facade
- - [ ] Flyweight
- - [ ] Proxy
- - [ ] Chain of Resp.
- - [ ] Command
- - [ ] Interpreter
- - [ ] Iterator
- - [ ] Mediator
- - [ ] Memento
- - [ ] Observer
- - [ ] State
- - [ ] Strategy
- - [ ] Template Method
- - [ ] Visitor
+ - [ ]  Abstract Factory
+ - [ ]  Builder
+ - [ ]  Factory Method
+ - [ ]  Prototype
+ - [X]  Singleton
+ - [ ]  Adapter
+ - [ ]  Bridge
+ - [ ]  Composite
+ - [ ]  Decorator
+ - [ ]  Facade
+ - [ ]  Flyweight
+ - [ ]  Proxy
+ - [ ]  Chain of Resp.
+ - [ ]  Command
+ - [ ]  Interpreter
+ - [ ]  Iterator
+ - [ ]  Mediator
+ - [ ]  Memento
+ - [ ]  Observer
+ - [ ]  State
+ - [ ]  Strategy
+ - [ ]  Template Method
+ - [ ]  Visitor
 
 ### [dotnet core](#dotnet-core-notes)
- - [ ] Introduction
- - [ ] Getting Started
- - [ ] HTTP
- - [ ] Middleware
- - [ ] Routing
- - [ ] Controllers and IActionResult
- - [ ] Model Binding and Validations
- - [ ] Razor Views
- - [ ] Layout Views
- - [ ] Partial Views
- - [ ] View Components
- - [X] [Dependency Injection](#dependency-injection)
- - [X] [Environments](#environments)
- - [ ] Configurations
- - [ ] xUnit
- - [ ] CRUD Operations
- - [ ] Tag Helpers
- - [ ] Entity Framework Core
- - [ ] Unit Testing [Advanced, Moq & Repository Pattern]
- - [ ] Logging and Serilog
- - [ ] Filters
- - [ ] Error Handling
- - [ ] SOLID Principles
- - [ ] Clean Architecture
- - [ ] Identity, Authorization
- - [ ] Minimal API (Asp.Net Core 7)
- - [ ] Extra: C# Essentials
- - [ ] The End
+ - [ ]  Introduction
+ - [ ]  Getting Started
+ - [ ]  HTTP
+ - [ ]  Middleware
+ - [ ]  Routing
+ - [ ]  Controllers and IActionResult
+ - [ ]  Model Binding and Validations
+ - [ ]  Razor Views
+ - [ ]  Layout Views
+ - [ ]  Partial Views
+ - [ ]  View Components
+ - [X]  [Dependency Injection](#dependency-injection)
+ - [X]  [Environments](#environments)
+ - [ ]  Configurations
+ - [ ]  xUnit
+ - [ ]  CRUD Operations
+ - [ ]  Tag Helpers
+ - [ ]  Entity Framework Core
+ - [ ]  Unit Testing [Advanced, Moq & Repository Pattern]
+ - [ ]  Logging and Serilog
+ - [ ]  Filters
+ - [ ]  Error Handling
+ - [ ]  SOLID Principles
+ - [ ]  Clean Architecture
+ - [ ]  Identity, Authorization
+ - [ ]  Minimal API (Asp.Net Core 7)
+ - [ ]  Extra: C# Essentials
+ - [ ]  The End
 
 ### React JS
 ### Material UI
