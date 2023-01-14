@@ -73,13 +73,13 @@
 
 ### dotnet core Notes
 #### Middleware
-```
+```csharp
 UseWhen(predicate,Action);
 ```
 
 #### Dependency Injection
 
-```
+```csharp
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.Add(new ServiceDescriptor(typeof(Abstraction),typeof(ConcreteImplementation),ServiceLifetime);
 // or
@@ -88,7 +88,7 @@ builder.Services.AddScoped<Abstraction,ConcreteImplementation>();
 builder.Services.AddSingleton<Abstraction,ConcreteImplementation>();
 ```
 Constructor Injection is to use DI to resolve abstractions in constructor, and when done in Methods, it is called Method Injection
-```
+```csharp
 public Task SomeMethod([FromService] SomeInterface someInterface){}
 ```
 **ServiceLifetime**:
@@ -98,7 +98,7 @@ public Task SomeMethod([FromService] SomeInterface someInterface){}
 **Child Scope**
 Use ServiceLifetime.Scoped
 Please note: For EntityFramework services, it is internally managed by EntityFramework
-```
+```csharp
 using(IServiceScope scope = IServiceScopeFactory.CreateScope())
 {
     var service = scope.ServiceProvider.GetRequiredService<Abstraction>();
@@ -106,7 +106,7 @@ using(IServiceScope scope = IServiceScopeFactory.CreateScope())
 }
 ```
 **DI in Views**
-```
+```csharp
 @inject Abstraction abstraction
 ```
 
@@ -124,4 +124,15 @@ You can set on cmd> `SET ASPNETCORE_ENVIRONMENT="SomeValue"`
 For Dependency Injection you get `IWebHostEnvironment` 
 
 You can also use Tag Helper like <environment></environment> to perform environment specific rendering in ASP.Net, exclude and include are attributes commonly used
-```<environment include"Development">someContent</environment>```
+```html
+<environment include"Development">someContent</environment>
+```
+
+Sample code for Program.cs
+```csharp
+if (app.Environment.IsDevelopment())
+{
+    /// Shows Detailed Exception Details
+    app.UseDeveloperExceptionPage();
+}
+```
