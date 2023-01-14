@@ -1,8 +1,9 @@
+
 # Personal Growth
 
 ## Topics to cover
 
-### Design Patterns
+### [Design Patterns](#design-patterns-notes)
  - [ ] Abstract Factory
  - [ ] Builder
  - [ ] Factory Method
@@ -27,7 +28,7 @@
  - [ ] Template Method
  - [ ] Visitor
 
-### dotnet core
+### [dotnet core](#dotnet-core-notes)
  - [ ] Introduction
  - [ ] Getting Started
  - [ ] HTTP
@@ -39,8 +40,8 @@
  - [ ] Layout Views
  - [ ] Partial Views
  - [ ] View Components
- - [X] Dependency Injection
- - [X] Environments
+ - [X] [Dependency Injection](#dependency-injection)
+ - [X] [Environments](#environments)
  - [ ] Configurations
  - [ ] xUnit
  - [ ] CRUD Operations
@@ -65,11 +66,12 @@
 ### Cloud (Azure)
 
 ## Study Notes
-### Design Patterns
+### Design Patterns Notes
 #### Singleton
-Only one instance should be created in the lifetime.
 
-### dotnet core
+> Only one instance should be created in the lifetime.
+
+### dotnet core Notes
 #### Middleware
 ```
 UseWhen(predicate,Action);
