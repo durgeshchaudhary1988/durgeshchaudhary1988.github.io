@@ -29,7 +29,7 @@
  - [ ]  Visitor
 
 ### [dotnet core](#dotnet-core-notes)
- - [ ]  Introduction
+ - [ ]  [Introduction](#in)
  - [ ]  Getting Started
  - [ ]  HTTP
  - [ ]  Middleware
@@ -72,6 +72,14 @@
 > Only one instance should be created in the lifetime.
 
 ### dotnet core Notes
+
+#### Introduction
+ - Cross Platform, can be hosted on Win, Linux, Mac
+ - Can be hosted on different servers Kestrel, IIS, Nginx, Docker, Apache
+ - ASP.Net Core Supports MS Azure Out of the Box
+ - ASP.Net Web forms has performance issues because of server events(Page life cycle) and View State
+ - ASP.Net MVC has performance issues due to dependencies on ASP.Net(e.g. System.Web.dll)
+
 #### Middleware
 ```csharp
 UseWhen(predicate,Action);
