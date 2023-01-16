@@ -95,9 +95,12 @@ public Task SomeMethod([FromService] SomeInterface someInterface){}
  - Transient: Per Injection, if in a request 3 injections are required, 3 objects will be created, disposed when request ends(similar to scoped)
  - Scoped: Browser Request, if in a request 3 injections are required, 1 object will be created and shared, disposed when request ends
  - Singleton: Only one object is created and is shared till lifetime of the service, when application ends
+
 **Child Scope**
-Use ServiceLifetime.Scoped
+Use `ServiceLifetime.Scoped`
+
 Please note: For EntityFramework services, it is internally managed by EntityFramework
+
 ```csharp
 using(IServiceScope scope = IServiceScopeFactory.CreateScope())
 {
@@ -121,6 +124,7 @@ You can set on cmd> `SET ASPNETCORE_ENVIRONMENT="SomeValue"`
 `dotnet run --no-launch-profile` runs with envirnoment set to Production and no launch profile
 
 `app.Environment` to use Envirnoment related properties and method
+
 For Dependency Injection you get `IWebHostEnvironment` 
 
 You can also use Tag Helper like <environment></environment> to perform environment specific rendering in ASP.Net, exclude and include are attributes commonly used
