@@ -29,7 +29,7 @@
  - [ ]  Visitor
 
 ### [dotnet core](#dotnet-core-notes)
- - [ ]  [Introduction](#introduction)
+ - [X]  [Introduction](#introduction)
  - [ ]  Getting Started
  - [ ]  HTTP
  - [ ]  Middleware
@@ -74,11 +74,17 @@
 ### dotnet core Notes
 
 #### Introduction
+ - Modules:
+    - ASP.Net Core MVC
+    - ASP.Net Core Web API
+    - ASP.Net Core Razor Pages
+    - ASP.Net Core Blazor
  - Cross Platform, can be hosted on Win, Linux, Mac
  - Can be hosted on different servers Kestrel, IIS, Nginx, Docker, Apache
  - ASP.Net Core Supports MS Azure Out of the Box
  - ASP.Net Web forms has performance issues because of server events(Page life cycle) and View State
  - ASP.Net MVC has performance issues due to dependencies on ASP.Net(e.g. System.Web.dll)
+ - ASP.Net Core has built in support for Dependency Injection while ASP.Net MVC has optional and ASP.Net Webforms no support
 
 #### Middleware
 ```csharp
