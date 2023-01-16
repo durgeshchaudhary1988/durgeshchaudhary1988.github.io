@@ -143,6 +143,7 @@ You can also use Tag Helper like <environment></environment> to perform environm
 Sample code:
 
 > Program.cs
+
 ```csharp
 if (app.Environment.IsDevelopment())
 {
@@ -152,7 +153,9 @@ if (app.Environment.IsDevelopment())
 
 app.Run();
 ```
+
 > Run on cmd
+
 ```batch
 dotnet run --no-launch-profile
 ```
