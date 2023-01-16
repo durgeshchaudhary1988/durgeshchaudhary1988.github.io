@@ -29,7 +29,7 @@
  - [ ]  Visitor
 
 ### [dotnet core](#dotnet-core-notes)
- - [ ]  [Introduction](#in)
+ - [ ]  [Introduction](#introduction)
  - [ ]  Getting Started
  - [ ]  HTTP
  - [ ]  Middleware
@@ -140,11 +140,19 @@ You can also use Tag Helper like <environment></environment> to perform environm
 <environment include"Development">someContent</environment>
 ```
 
-Sample code for Program.cs
+Sample code:
+
+> Program.cs
 ```csharp
 if (app.Environment.IsDevelopment())
 {
     /// Shows Detailed Exception Details
     app.UseDeveloperExceptionPage();
 }
+
+app.Run();
+```
+> Run on cmd
+```batch
+dotnet run --no-launch-profile
 ```
