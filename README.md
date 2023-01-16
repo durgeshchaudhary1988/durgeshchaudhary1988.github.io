@@ -86,6 +86,8 @@
  - ASP.Net MVC has performance issues due to dependencies on ASP.Net(e.g. System.Web.dll)
  - ASP.Net Core has built in support for Dependency Injection while ASP.Net MVC has optional and ASP.Net Webforms no support
 
+`WebApplication.CreateBuilder(args)` builder loads Configuration, Environment and Services
+
 #### Middleware
 ```csharp
 UseWhen(predicate,Action);
@@ -151,6 +153,15 @@ Sample code:
 > Program.cs
 
 ```csharp
+/// Builder
+var builder = WebApplication.CreateBuilder(args);
+// builder.Services
+// builder.Configuration
+// builder.Environment
+
+/// Application
+var app = builder.Build();
+
 if (app.Environment.IsDevelopment())
 {
     /// Shows Detailed Exception Details
